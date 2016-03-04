@@ -1,0 +1,1661 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"packa",
+				"package is	 ʂ"
+			],
+			[
+				"Ma",
+				"MatchString	bool ƒ"
+			],
+			[
+				"rxE",
+				"rxEmail	*regexp.Regexp ν"
+			],
+			[
+				"pack",
+				"package is	 ʂ"
+			],
+			[
+				"va",
+				"ValidateStruct	bool, error ƒ"
+			],
+			[
+				"log",
+				"log.Printf(...)	 ʂ"
+			],
+			[
+				"lo",
+				"log.Printf(...)	 ʂ"
+			],
+			[
+				"fun",
+				"func (*UpdatePasswordForm)	func (...) {...} ʂ"
+			],
+			[
+				"tblUser",
+				"TblUsersSelectColumns	[]string ν"
+			],
+			[
+				"tbl",
+				"TblPostsSelectColumns	[]string ν"
+			],
+			[
+				"userre",
+				"userResBody	struct ʈ"
+			],
+			[
+				"res",
+				"Resource	 ƒ"
+			],
+			[
+				"ct",
+				"ctx	*Ctx ν"
+			],
+			[
+				"find",
+				"FindUser	u *domain.User, err error ƒ"
+			],
+			[
+				"Ctx",
+				"Ctx	struct ʈ"
+			],
+			[
+				"errUser",
+				"errUsernameExists	error ν"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"if",
+				"if	If Statement"
+			],
+			[
+				"form",
+				"form	*UpdateEmailForm ν"
+			],
+			[
+				"and",
+				"AndMap	map[string]interface{} ʈ"
+			],
+			[
+				"dbr",
+				"dbr	 package ρ"
+			],
+			[
+				"Coun",
+				"CountWhere	count int64, err error ƒ"
+			],
+			[
+				"update",
+				"updateEmailHand	(me_handler.go)"
+			],
+			[
+				"UpdateEma",
+				"UpdateEmailForm	(user.go)"
+			],
+			[
+				"st",
+				"string"
+			],
+			[
+				"Se",
+				"Set	*dbr.UpdateBuilder ƒ"
+			],
+			[
+				"Whe",
+				"Where	*dbr.SelectBuilder ƒ"
+			],
+			[
+				"whe",
+				"WhereCond	[]dbr.Condition ν"
+			],
+			[
+				"int",
+				"int64	(post_handler.go)"
+			],
+			[
+				"co",
+				"Condition	interface ¡"
+			],
+			[
+				"User",
+				"UserID"
+			],
+			[
+				"Update",
+				"UpdateEmailForm"
+			],
+			[
+				"func",
+				"func	func {...} ʂ"
+			],
+			[
+				"c",
+				"ctx	*Ctx ν"
+			],
+			[
+				"get",
+				"ctx, _ := getCtx(r)	 ʂ"
+			],
+			[
+				"is",
+				"isLikedBefore"
+			],
+			[
+				"post",
+				"postID"
+			],
+			[
+				"Sele",
+				"Select	*dbr.SelectBuilder ƒ"
+			],
+			[
+				"var",
+				"var	var (...) ʂ"
+			],
+			[
+				"para",
+				"ParamInt64	p int64, err error ƒ"
+			],
+			[
+				"ses",
+				"Sess	*dbr.Session ν"
+			],
+			[
+				"servi",
+				"services	 package ρ"
+			],
+			[
+				"create",
+				"created_at	(services.go)"
+			],
+			[
+				"Col",
+				"Columns	*dbr.InsertBuilder ƒ"
+			],
+			[
+				"Tbl",
+				"TblLikes	(post.go)"
+			],
+			[
+				"In",
+				"InsertInto	*dbr.InsertBuilder ƒ"
+			],
+			[
+				"se",
+				"Session	struct ʈ"
+			],
+			[
+				"postres",
+				"postResBody	struct ʈ"
+			],
+			[
+				"Load",
+				"LoadStruct	error ƒ"
+			],
+			[
+				"L",
+				"Load	int, error ƒ"
+			],
+			[
+				"Token",
+				"TokenParamInt64	(lib.go)"
+			],
+			[
+				"float",
+				"float	float64 ν"
+			],
+			[
+				"error",
+				"errors	(utils.go)"
+			],
+			[
+				"pr",
+				"Println	n int, err error ƒ"
+			],
+			[
+				"logge",
+				"logger	 package ρ"
+			],
+			[
+				"le_",
+				"le_go	 package ρ"
+			],
+			[
+				"errs",
+				"errs	 package ρ"
+			],
+			[
+				"Err",
+				"Error"
+			],
+			[
+				"erro",
+				"errors"
+			],
+			[
+				"statusBad",
+				"StatusBadRequest	 Ɩ"
+			],
+			[
+				"IN",
+				"StatusInternalServerError	 Ɩ"
+			],
+			[
+				"Ses",
+				"Sess	*dbr.Session ν"
+			],
+			[
+				"Con",
+				"Conn	*dbr.Connection ν"
+			],
+			[
+				"Co",
+				"Connection	struct ʈ"
+			],
+			[
+				"mysql",
+				"mysql	*sql.DB ν"
+			],
+			[
+				"sq",
+				"sql	 package ρ"
+			],
+			[
+				"Where",
+				"Where	*dbr.SelectBuilder ƒ"
+			],
+			[
+				"From",
+				"From	*dbr.SelectBuilder ƒ"
+			],
+			[
+				"Fro",
+				"From	*dbr.SelectBuilder ƒ"
+			],
+			[
+				"from",
+				"From	*dbr.SelectBuilder ƒ"
+			],
+			[
+				"e",
+				"Exec	sql.Result, error ƒ"
+			],
+			[
+				"Re",
+				"Record	*dbr.InsertStmt ƒ"
+			],
+			[
+				"U",
+				"User	*domain.User ν"
+			],
+			[
+				"TBL",
+				"TblPosts"
+			],
+			[
+				"sess",
+				"sess	*dbr.Session ν"
+			],
+			[
+				"Tb",
+				"TblPosts"
+			],
+			[
+				"TB",
+				"TblPosts"
+			],
+			[
+				"nul",
+				"NullInt64	struct ʈ"
+			],
+			[
+				"cos",
+				"const	const (...) ʂ"
+			],
+			[
+				"mysq",
+				"mysql	*sql.DB ν"
+			],
+			[
+				"My",
+				"MySQL	*dbr.Session ν"
+			],
+			[
+				"con",
+				"NewConnection	*dbr.Connection ƒ"
+			],
+			[
+				"service",
+				"services"
+			],
+			[
+				"Ins",
+				"InsertColumns"
+			],
+			[
+				"us",
+				"User	*domain.User ν"
+			],
+			[
+				"err",
+				"errEmailExists"
+			],
+			[
+				"Bad",
+				"StatusBadRequest	 Ɩ"
+			],
+			[
+				"C",
+				"C	*mgo.Collection ƒ"
+			],
+			[
+				"meHand",
+				"meHand	 ƒ"
+			],
+			[
+				"lp",
+				"line>\\d+)?(?:[:](?P	(GoSublime.sublime-settings)"
+			],
+			[
+				"http",
+				"func http handler	func(rw, req) ʂ"
+			],
+			[
+				"ifer",
+				"iferr2	(go.sublime-snippet)"
+			],
+			[
+				"iferr",
+				"iferr	go"
+			],
+			[
+				"er",
+				"errors	 package ρ"
+			],
+			[
+				"conte",
+				"context	 package ρ"
+			],
+			[
+				"re",
+				"Res	http.ResponseWriter ν"
+			],
+			[
+				"erra",
+				"errAuthNotActivedUser	*lib.AppError ν"
+			],
+			[
+				"errau",
+				"errAuthToken	*lib.AppError ν"
+			],
+			[
+				"go",
+				"govalidator	 package ρ"
+			],
+			[
+				"Bid",
+				"BindAndValidate	err error ƒ"
+			],
+			[
+				"errva",
+				"errValidationFailed	 Ɩ"
+			],
+			[
+				"proje",
+				"projectPath"
+			],
+			[
+				"subl",
+				"sublime-projects"
+			],
+			[
+				"open",
+				"openSublimeProject"
+			],
+			[
+				"pac",
+				"package domain	 ʂ"
+			],
+			[
+				"imp",
+				"imp	Import"
+			],
+			[
+				"Sub",
+				"SubscribeEmailForm"
+			],
+			[
+				"Res",
+				"Result	interface{} ν"
+			],
+			[
+				"respon",
+				"response	struct ʈ"
+			],
+			[
+				"time",
+				"time	(entities.go)"
+			],
+			[
+				"Crea",
+				"CreatedAt	(entities.go)"
+			],
+			[
+				"times",
+				"times	*domain.Times ν"
+			],
+			[
+				"T",
+				"Times	(entities.go)"
+			],
+			[
+				"CreatePo",
+				"CreatePostForm	struct ʈ"
+			],
+			[
+				"ctx",
+				"ctx	*lib.Ctx ν"
+			],
+			[
+				"Register",
+				"RegisterForm	struct ʈ"
+			],
+			[
+				"corsMi",
+				"corsMid	*cors.Cors ν"
+			],
+			[
+				"cors",
+				"corsMid"
+			],
+			[
+				"rou",
+				"router	*mux.Router ν"
+			],
+			[
+				"Han",
+				"Handler	http.Handler ƒ"
+			],
+			[
+				"befo",
+				"beforeSubmit	(index.js)"
+			],
+			[
+				"SE",
+				"Session	struct ʈ"
+			],
+			[
+				"Ima",
+				"ImageID	bson.ObjectId ν"
+			],
+			[
+				"R",
+				"Repo	*Repo ν"
+			],
+			[
+				"domain",
+				"domain	 package ρ"
+			],
+			[
+				"ob",
+				"ObjectIdHex	bson.ObjectId ƒ"
+			],
+			[
+				"Obej",
+				"ObjectId	string ʈ"
+			],
+			[
+				"fi",
+				"Find	*mgo.Query ƒ"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Build",
+					""
+				],
+				[
+					"Packages/GoSublime/GoSublime.sublime-build",
+					""
+				]
+			],
+			[
+				"Build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/GoSublime/GoSublime.sublime-build",
+					""
+				],
+				[
+					"Packages/User/golang.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/User/golang.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 456.0,
+		"last_filter": "save ",
+		"selected_items":
+		[
+			[
+				"save ",
+				"Project: Save As"
+			],
+			[
+				"ter",
+				"Terminal: Open"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"markd ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"new fi",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"goto",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"go def",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"add",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"packa",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"gosub set",
+				"GoSublime: Default Settings"
+			],
+			[
+				"add pa",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"gosub user",
+				"GoSublime: User Settings"
+			],
+			[
+				"addpac",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"add pac",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"gosub se",
+				"GoSublime: User Settings"
+			],
+			[
+				"new fol",
+				"File: New Folder Relative to Project Root"
+			],
+			[
+				"new",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"new f",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"git dif",
+				"Git: Diff All Files"
+			],
+			[
+				"te",
+				"Terminal: Open"
+			],
+			[
+				"git di",
+				"Git: Diff All Files"
+			],
+			[
+				"term",
+				"Terminal: Open"
+			],
+			[
+				"",
+				"Bookmarks: Select Previous"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"temr",
+				"Terminal: Open"
+			],
+			[
+				"gosubl",
+				"GoSublime: Default Settings"
+			],
+			[
+				"jspre",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"gosub us",
+				"GoSublime: User Settings"
+			],
+			[
+				"gosubli user",
+				"GoSublime: User Settings"
+			],
+			[
+				"gosubl set",
+				"GoSublime: Default Settings"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"packaresou",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"packare",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"snipper",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"save",
+				"File: Save All"
+			],
+			[
+				"gosub im",
+				"GoSublime: Go to imports section"
+			],
+			[
+				"saveal",
+				"File: Save All"
+			],
+			[
+				"adpac",
+				"GoSublime: Add/Remove package"
+			],
+			[
+				"show er",
+				"GoSublime: Show errors"
+			],
+			[
+				"close ",
+				"Project: Close"
+			],
+			[
+				"gosubli im",
+				"GoSublime: Go to imports section"
+			],
+			[
+				"gosub",
+				"GoSublime: New Go File"
+			],
+			[
+				"pre",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pret",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"diff",
+				"Git: Diff Tool Current File"
+			],
+			[
+				"folder",
+				"Terminal: Open in project folder"
+			],
+			[
+				"git",
+				"Git: Graph Current File"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"go to",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"gode",
+				"GoSublime: Goto Definition"
+			],
+			[
+				"show",
+				"GoSublime: Show errors"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"set syn mak",
+				"Set Syntax: Makefile Plus"
+			],
+			[
+				"check",
+				"Git: Checkout Current File"
+			],
+			[
+				"book",
+				"Bookmarks: Toggle"
+			],
+			[
+				"fold",
+				"BracketHighlighter: Fold Bracket Content"
+			],
+			[
+				"fora",
+				"Format: Javascript"
+			],
+			[
+				"open",
+				"Terminal: Open"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"setti",
+				"Preferences: Settings - User"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"error",
+				"GoSublime: Open Error Log"
+			],
+			[
+				"update packa",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"import",
+				"PHPCompanion:Import Namespace"
+			],
+			[
+				"imo",
+				"PHPCompanion:Import Namespace"
+			],
+			[
+				"form",
+				"phpfmt: format now"
+			],
+			[
+				"for",
+				"phpfmt: format now"
+			],
+			[
+				"ana",
+				"phpfmt: analyse this"
+			],
+			[
+				"fmt",
+				"phpfmt: toggle autocomplete"
+			],
+			[
+				"use",
+				"PHPCompanion:Find Use"
+			],
+			[
+				"impor",
+				"PHPCompanion:Import Namespace"
+			],
+			[
+				"compo",
+				"PHPCompanion:Import Namespace"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Channel"
+			],
+			[
+				"gosublime fm",
+				"GoSublime: Fmt and save"
+			],
+			[
+				"instlal",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 300.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/ali/go/src/github.com/alioygur/godash"
+	],
+	"file_history":
+	[
+		"/home/ali/go/src/github.com/alioygur/is/type.go",
+		"/home/ali/go/src/github.com/alioygur/is/string.go",
+		"/home/ali/go/src/github.com/alioygur/is/patterns.go",
+		"/home/ali/go/src/github.com/alioygur/is/regex.go",
+		"/home/ali/go/src/github.com/alioygur/is/converter.go",
+		"/home/ali/go/src/github.com/alioygur/is/utils.go",
+		"/home/ali/go/src/github.com/alioygur/is/is.go",
+		"/home/ali/go/src/github.com/alioygur/is/numerics_test.go",
+		"/home/ali/go/src/github.com/alioygur/is/numerics.go",
+		"/home/ali/go/src/github.com/alioygur/go",
+		"/home/ali/go/src/github.com/alioygur/is/README.md",
+		"/home/ali/go/src/github.com/alioygur/is/is.sublime-project",
+		"/home/ali/go/src/github.com/alioygur/is/regex_test.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/services/post.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/app.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/me_handler.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/context.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/errs/errors.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/.gitignore",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/domain/domain.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/services/services.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/services/like.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/logger/logger.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/lib/lib.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/services/user.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/post_handler.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/auth_handler.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/responses.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/main.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/swagger.json",
+		"/home/ali/.config/sublime-text-3/Packages/GoSublime/GoSublime.sublime-settings",
+		"/home/ali/.config/sublime-text-3/Packages/User/GoSublime.sublime-settings",
+		"/home/ali/.config/sublime-text-3/Packages/Go/If Statement.tmSnippet",
+		"/home/ali/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/services/like",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/utils.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/domain/entities.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/middlewares.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/goaligo.sublime-project",
+		"/home/ali/go/src/github.com/alioygur/goaligo/build.sh",
+		"/home/ali/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/ali/.config/sublime-text-3/Packages/User/golang.sublime-build",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/domain/interfaces.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/notes.md",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/lib/context.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/lib/errors.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/lib/repo.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/db/db.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/db/post.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/post.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/auth.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/tmp/runner-build",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/me.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/operations/operations.go",
+		"/home/ali/go/src/github.com/alioygur/goaligo/app/terminal.glue",
+		"/home/ali/.aliases.sh",
+		"/home/ali/.config/sublime-text-3/Packages/User/log.println-go.sublime-snippet",
+		"/home/ali/.config/sublime-text-3/Packages/Go/func.tmSnippet",
+		"/home/ali/.config/sublime-text-3/Packages/User/iferr-go.sublime-snippet",
+		"/home/ali/.config/sublime-text-3/Packages/Go/main().tmSnippet",
+		"/home/ali/pali",
+		"/home/ali/dev/piklook-api/piklook.sublime-project",
+		"/home/ali/.zshrc",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/build.sh",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/app/routes/accounts.go",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/app/structs/structs.go",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/app/services/db.go",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/app/models/models.go",
+		"/home/ali/dev/email-subscribers/app/src/service/app/services/init.go",
+		"/home/ali/dev/email-subscribers/.gitignore",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/build.sh",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/app/routes/healthCheck.go",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/app/routes/subscribe.go",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/contetto/configAPI.go",
+		"/home/ali/.config/sublime-text-3/Packages/User/GoSublime/linux-x64/log.txt",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/app/routes/init.go",
+		"/home/ali/.config/sublime-text-3/Packages/GoSublime/README.md",
+		"/home/ali/.config/sublime-text-3/Packages/GoSublime/USAGE.md",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/my-project.sublime-project",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/email-subscribers",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/main.go",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/application.json",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/app/routes/math.go",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/app/app.go",
+		"/home/ali/go/src/github.com/alioygur/email-subscribers/app/src/service/app/bootstrap.go",
+		"/home/ali/dev/piklook-api/Envoy.blade.php",
+		"/home/ali/dev/piklook-corprate/webpack.config.js",
+		"/home/ali/dev/piklook-corprate/package.json",
+		"/home/ali/dev/piklook-frontend/webpack.config.js",
+		"/home/ali/dev/piklook-frontend/package.json",
+		"/home/ali/dev/piklook-frontend/.gitignore",
+		"/home/ali/dev/piklook-frontend/src/main.js",
+		"/home/ali/dev/piklook-frontend/src/views/home/index.js",
+		"/home/ali/dev/piklook-frontend/src/views/home/template.html",
+		"/home/ali/dev/piklook-frontend/src/routes.js",
+		"/home/ali/dev/piklook-frontend/index.html",
+		"/home/ali/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/home/ali/dev/piklook-corprate/src/views/auth/register/index.js",
+		"/home/ali/dev/piklook-corprate/src/components/form/index.js",
+		"/home/ali/dev/piklook-corprate/src/views/auth/register/template.html",
+		"/home/ali/dev/piklook-corprate/.gitignore",
+		"/home/ali/dev/piklook-corprate/src/views/jobs/new/index.js",
+		"/home/ali/dev/piklook-corprate/index.html",
+		"/home/ali/dev/piklook-corprate/.jsbeautifyrc",
+		"/home/ali/dev/piklook-corprate/src/views/jobs/new/template.html",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/app/services/eventHandler.go",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/app/app.go",
+		"/home/ali/go/src/github.com/alioygur/social-accounts/app/src/service/main.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/domain/entities.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/responses.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/main.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/post.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/app.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/context.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/repositories.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/auth.go",
+		"/home/ali/go/src/github.com/alioygur/piklook-corporate/app/debug.go",
+		"/home/ali/.config/sublime-text-3/Packages/GitGutter/GitGutter.sublime-settings",
+		"/home/ali/dev/piklook-corprate/src/components/search/template.html",
+		"/home/ali/dev/piklook-corprate/src/components/search/index.js",
+		"/home/ali/.config/sublime-text-3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
+		"/home/ali/dev/piklook-corprate/.jshintrc",
+		"/home/ali/dev/piklook-corprate/src/views/dashboard/index.js",
+		"/home/ali/dev/piklook-corprate/src/views/auth/login/index.js",
+		"/home/ali/dev/piklook-corprate/src/components/modal/index.js",
+		"/home/ali/dev/piklook-corprate/src/components/recaptcha/index.js",
+		"/home/ali/dev/piklook-corprate/src/components/recaptcha/template.html",
+		"/home/ali/dev/piklook-corprate/src/views/home/template.html"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 157.0,
+		"where_history":
+		[
+			"/home/ali/go/src/github.com/alioygur/goaligo/app",
+			"/home/ali/dev/piklook-corprate",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Range",
+			"IsJSON",
+			"IsDivisibleBy",
+			"IsNatural",
+			"IsWhole",
+			"IsNonPositive",
+			"IsPositive",
+			"IsNonNegative",
+			"IsNegative",
+			"IsNatural",
+			"IsWhole",
+			"InRange",
+			"IsNonPositive",
+			"IsNonNegative",
+			"IsPositive",
+			"IsNegative",
+			"IsDivisibleBy",
+			"IsEmail",
+			"IsAlphanumeric",
+			".v1",
+			"gores",
+			"IsSemver",
+			"IsSSN",
+			"IsLongitude",
+			"IsLatitude",
+			"IsMongoID",
+			"IsMAC",
+			"IPv4",
+			"IsPort",
+			"IsIP",
+			"IsDialString",
+			"IsDNSName",
+			"IsISO3166Alpha3",
+			"IsISO3166Alpha2",
+			"IsDataURI",
+			"IsFilePath",
+			"IsBase64",
+			"IsVariableWidth",
+			"IsHalfWidth",
+			"IsFullWidth",
+			"IsPrintableASCII",
+			"IsASCII",
+			"IsMultibyte",
+			"ISBN10",
+			"IsNull",
+			"IsFloat",
+			"IsInt",
+			"IsISBN",
+			"IsISBN13",
+			"IsISBN10",
+			"IsCreditCard",
+			"IsUUID",
+			"IsUUIDv5",
+			"IsUUIDv4",
+			"IsUUIDv3",
+			"IsNull",
+			"IsUpperCase",
+			"IsLowerCase",
+			"IsRGBcolor",
+			"IsHexcolor",
+			"IsHexadecimal",
+			"IsUTFDigit",
+			"IsUTFNumeric",
+			"IsNumeric",
+			"IsUTFLetter",
+			"IsAlpha",
+			"IsRequestURI",
+			"IsRequestURL",
+			"IsURL",
+			"Is",
+			"IsEmail",
+			"MustCompile(",
+			"string =",
+			"validate",
+			"validate:",
+			"CountWhere",
+			"Username",
+			"Email",
+			"user_id",
+			"Username",
+			"email",
+			"Email",
+			"string",
+			"log",
+			"log.",
+			"log",
+			"\"gopkg.in/gocraft/dbr.v1\"",
+			"Users",
+			"env",
+			"req",
+			"rw",
+			"ctx := getCtx(r)",
+			"lib.",
+			"48",
+			"NewValidationFailedErr",
+			"ErrResponse",
+			"Bind",
+			"\"}",
+			"}",
+			"&lib.AppError{",
+			" Message: ",
+			"StatusCode: http.StatusBadRequest, Name: ",
+			"StatusCode: http.StatusUnauthorized, Name: ",
+			"Validation",
+			"appErr",
+			"NewValidationFailedErr",
+			"AppError",
+			"time.Time",
+			",",
+			"\"*\"",
+			"user",
+			"ctx *lib.Ctx",
+			"sess *mgo.Session",
+			"lib",
+			"bson",
+			"`bson:",
+			"bson.ObjectId",
+			"sess *mgo.Session",
+			"db",
+			"error",
+			"echo",
+			"Email",
+			"line\\",
+			"line\\\\",
+			"line\\d",
+			"snippe",
+			"snippet",
+			"snippe"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"\"github.com/gocraft/dbr\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 40.0
+	},
+	"input":
+	{
+		"height": 53.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///home/ali/go/src/github.com/alioygur/goaligo":
+	{
+		"height": 200.0
+	},
+	"output.9o:///home/ali/go/src/github.com/alioygur/goaligo/app/lib":
+	{
+		"height": 188.0
+	},
+	"output.9o:///home/ali/go/src/github.com/alioygur/goaligo/app/services":
+	{
+		"height": 200.0
+	},
+	"output.GsDoc-output-output":
+	{
+		"height": 200.0
+	},
+	"output.exec":
+	{
+		"height": 166.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 200.0
+	},
+	"pinned_build_system": "",
+	"project": "godash.sublime-project",
+	"replace":
+	{
+		"height": 76.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"is",
+				"is.go"
+			],
+			[
+				"cone",
+				"converter.go"
+			],
+			[
+				"errs",
+				"app/errs/errors.go"
+			],
+			[
+				"post",
+				"app/services/post.go"
+			],
+			[
+				"mehan",
+				"app/me_handler.go"
+			],
+			[
+				"app",
+				"app/app.go"
+			],
+			[
+				"ut",
+				"app/utils.go"
+			],
+			[
+				"ctx",
+				"app/context.go"
+			],
+			[
+				"user",
+				"app/services/user.go"
+			],
+			[
+				"main",
+				"main.go"
+			],
+			[
+				"respon",
+				"app/responses.go"
+			],
+			[
+				"mehad",
+				"app/me_handler.go"
+			],
+			[
+				"me",
+				"app/me_handler.go"
+			],
+			[
+				"like",
+				"app/services/like.go"
+			],
+			[
+				"uti",
+				"app/utils.go"
+			],
+			[
+				"service",
+				"app/services/services.go"
+			],
+			[
+				"lib",
+				"app/lib/lib.go"
+			],
+			[
+				"enti",
+				"app/domain/entities.go"
+			],
+			[
+				"mid",
+				"app/middlewares.go"
+			],
+			[
+				"servi",
+				"app/services/services.go"
+			],
+			[
+				"auth",
+				"app/auth_handler.go"
+			],
+			[
+				"ap",
+				"app/app.go"
+			],
+			[
+				"errors",
+				"app/errs/errors.go"
+			],
+			[
+				"util",
+				"app/utils.go"
+			],
+			[
+				"con",
+				"app/context.go"
+			],
+			[
+				"respo",
+				"app/responses.go"
+			],
+			[
+				"midd",
+				"app/middlewares.go"
+			],
+			[
+				"ain",
+				"main.go"
+			],
+			[
+				"erro",
+				"app/lib/errors.go"
+			],
+			[
+				"conte",
+				"app/lib/context.go"
+			],
+			[
+				"doma",
+				"app/domain/entities.go"
+			],
+			[
+				"servuse",
+				"app/services/user.go"
+			],
+			[
+				"mod",
+				"app/middlewares.go"
+			],
+			[
+				"cn",
+				"app/lib/context.go"
+			],
+			[
+				"servipo",
+				"app/services/post.go"
+			],
+			[
+				"ent",
+				"app/domain/entities.go"
+			],
+			[
+				"mao",
+				"main.go"
+			],
+			[
+				"mide",
+				"app/middlewares.go"
+			],
+			[
+				"servius",
+				"app/services/user.go"
+			],
+			[
+				"inde",
+				"index.html"
+			],
+			[
+				"webpa",
+				"webpack.config.js"
+			],
+			[
+				"s",
+				"swagger.json"
+			],
+			[
+				"swa",
+				"swagger.json"
+			],
+			[
+				"pos",
+				"app/services/post.go"
+			],
+			[
+				"form",
+				"src/components/form/index.js"
+			],
+			[
+				"regsite",
+				"src/views/auth/register/template.html"
+			],
+			[
+				"regis",
+				"src/views/auth/register/index.js"
+			],
+			[
+				"jobsind",
+				"src/views/jobs/new/index.js"
+			],
+			[
+				"js",
+				".jsbeautifyrc"
+			],
+			[
+				"jobsnew",
+				"src/views/jobs/new/template.html"
+			],
+			[
+				"ct",
+				"app/context.go"
+			],
+			[
+				"repo",
+				"app/repositories.go"
+			],
+			[
+				"ma",
+				"main.go"
+			],
+			[
+				"debu",
+				"app/debug.go"
+			],
+			[
+				"",
+				"main.go"
+			],
+			[
+				"home",
+				"src/views/home/template.html"
+			],
+			[
+				"midle",
+				"app/middlewares.go"
+			],
+			[
+				"job",
+				"app/job.go"
+			],
+			[
+				"route",
+				"src/App/Http/routes.php"
+			],
+			[
+				"corpo",
+				"src/App/Http/corporate_routes.php"
+			],
+			[
+				"roletab",
+				"database/seeds/RolesTableSeeder.php"
+			],
+			[
+				"resumetabl",
+				"database/seeds/ResumeTableSeeder.php"
+			],
+			[
+				"defaultres",
+				"src/App/Resume/DefaultResumeRequest.php"
+			],
+			[
+				"othercon",
+				"src/App/Http/Controllers/OtherController.php"
+			],
+			[
+				"resumecon",
+				"src/App/Http/Controllers/ResumeController.php"
+			],
+			[
+				"routes",
+				"src/App/Http/routes.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"authcon",
+				"src/App/Http/Controllers/AuthController.php"
+			],
+			[
+				"model",
+				"app/models/models.go"
+			],
+			[
+				"mode",
+				"app/models/models.go"
+			],
+			[
+				"resumetem",
+				"src/views/resume/template.html"
+			],
+			[
+				"resumeid",
+				"src/views/resume/index.js"
+			],
+			[
+				"expetem",
+				"src/views/resume/experiences/template.html"
+			],
+			[
+				"logintem",
+				"src/views/auth/login/template.html"
+			],
+			[
+				"login",
+				"src/views/auth/login/index.js"
+			],
+			[
+				"expinde",
+				"src/views/resume/experiences/index.js"
+			],
+			[
+				"experitem",
+				"src/views/resume/experiences/template.html"
+			],
+			[
+				"userser",
+				"src/App/User/UserService.php"
+			],
+			[
+				"accou",
+				"src/App/Http/Controllers/AccountController.php"
+			],
+			[
+				"account",
+				"src/App/Http/Controllers/AccountController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/dev/piklook-frontend/piklook-frontend.sublime-project"
+			],
+			[
+				"pik",
+				"~/dev/piklook-api/piklook.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 424.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
