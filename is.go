@@ -154,14 +154,6 @@ func IsNonPositive(value float64) bool {
 	return value <= 0
 }
 
-// InRange returns true if value lies between left and right border
-func InRange(value, left, right float64) bool {
-	if left > right {
-		left, right = right, left
-	}
-	return value >= left && value <= right
-}
-
 // IsWhole returns true if value is whole number
 func IsWhole(value float64) bool {
 	return Abs(math.Remainder(value, 1)) == 0

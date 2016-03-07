@@ -50,15 +50,17 @@ func ToBoolean(str string) (bool, error) {
 	return res, err
 }
 
-// UnderscoreToCamelCase converts from underscore separated form to camel case form.
+// ToCamelCase converts from underscore separated form to camel case form.
 // Ex.: my_func => MyFunc
-func UnderscoreToCamelCase(s string) string {
+// todo: improve
+func ToCamelCase(s string) string {
 	return strings.Replace(strings.Title(strings.Replace(strings.ToLower(s), "_", " ", -1)), " ", "", -1)
 }
 
-// CamelCaseToUnderscore converts from camel case form to underscore separated form.
+// ToSnakeCase converts from camel case form to underscore separated form.
 // Ex.: MyFunc => my_func
-func CamelCaseToUnderscore(str string) string {
+// todo: improve
+func ToSnakeCase(str string) string {
 	var output []rune
 	var segment []rune
 	for _, r := range str {

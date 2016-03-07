@@ -56,7 +56,7 @@ func TestToFloat(t *testing.T) {
 	}
 }
 
-func TestUnderscoreToCamelCase(t *testing.T) {
+func TestToCamelCase(t *testing.T) {
 	t.Parallel()
 
 	var tests = []struct {
@@ -68,14 +68,14 @@ func TestUnderscoreToCamelCase(t *testing.T) {
 		{"1ab_cd", "1abCd"},
 	}
 	for _, test := range tests {
-		actual := UnderscoreToCamelCase(test.param)
+		actual := ToCamelCase(test.param)
 		if actual != test.expected {
-			t.Errorf("Expected UnderscoreToCamelCase(%q) to be %v, got %v", test.param, test.expected, actual)
+			t.Errorf("Expected ToCamelCase(%q) to be %v, got %v", test.param, test.expected, actual)
 		}
 	}
 }
 
-func TestCamelCaseToUnderscore(t *testing.T) {
+func TestToSnakeCase(t *testing.T) {
 	t.Parallel()
 
 	var tests = []struct {
@@ -87,9 +87,9 @@ func TestCamelCaseToUnderscore(t *testing.T) {
 		{"1B", "1_b"},
 	}
 	for _, test := range tests {
-		actual := CamelCaseToUnderscore(test.param)
+		actual := ToSnakeCase(test.param)
 		if actual != test.expected {
-			t.Errorf("Expected CamelCaseToUnderscore(%q) to be %v, got %v", test.param, test.expected, actual)
+			t.Errorf("Expected ToSnakeCase(%q) to be %v, got %v", test.param, test.expected, actual)
 		}
 	}
 }
