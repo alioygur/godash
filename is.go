@@ -9,6 +9,7 @@ import (
 	"strconv"
 	"strings"
 	"unicode"
+	"unicode/utf8"
 )
 
 // IsInRange returns true if value lies between left and right border
@@ -548,4 +549,33 @@ func IsSSN(str string) bool {
 // IsSemver check if string is valid semantic version
 func IsSemver(str string) bool {
 	return rxSemver.MatchString(str)
+}
+
+// IsMatches check if string matches the pattern (pattern is regular expression)
+// In case of error return false
+func IsMatches(str, pattern string) bool {
+	match, _ := regexp.MatchString(pattern, str)
+	return match
+}
+
+// IsStringMatches checks if a string matches a given pattern.
+func IsStringMatches(s string, params ...string) bool {
+	if len(params) == 1 {
+		pattern := params[0]
+		return IsMatches(s, pattern)
+	}
+	return false
+}
+
+// IsStringLength check string's length (including multi byte strings)
+func IsStringLength(str string, params ...string) bool {
+
+	if len(params) == 2 {
+		strLength := utf8.RuneCountInString(str)
+		min, _ := ToInt(params[0])
+		max, _ := ToInt(params[1])
+		return strLength >= int(min) && strLength <= int(max)
+	}
+
+	return false
 }

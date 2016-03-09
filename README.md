@@ -20,7 +20,7 @@ Many thanks to our contributors: [contributors](https://github.com/alioygur/goda
 
 ## Is* (collection of checking)
 
-**Example**
+**An Example**
 
 ```go
 var validEmail = "jhon@example.com"

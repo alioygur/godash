@@ -1853,3 +1853,50 @@ func TestIsInRange(t *testing.T) {
 		}
 	}
 }
+
+func TestIsMatches(t *testing.T) {
+	t.Parallel()
+
+	var tests = []struct {
+		param1   string
+		param2   string
+		expected bool
+	}{
+		{"123456789", "[0-9]+", true},
+		{"abacada", "cab$", false},
+		{"111222333", "((111|222|333)+)+", true},
+		{"abacaba", "((123+]", false},
+	}
+	for _, test := range tests {
+		actual := IsMatches(test.param1, test.param2)
+		if actual != test.expected {
+			t.Errorf("Expected IsMatches(%q,%q) to be %v, got %v", test.param1, test.param2, test.expected, actual)
+		}
+	}
+}
+
+func TestIsStringLength(t *testing.T) {
+	t.Parallel()
+
+	var tests = []struct {
+		value    string
+		min      string
+		max      string
+		expected bool
+	}{
+		{"123456", "0", "100", true},
+		{"1239999", "0", "0", false},
+		{"1239asdfasf99", "100", "200", false},
+		{"1239999asdff29", "10", "30", true},
+		{"あいうえお", "0", "5", true},
+		{"あいうえおか", "0", "5", false},
+		{"あいうえお", "0", "0", false},
+		{"あいうえ", "5", "10", false},
+	}
+	for _, test := range tests {
+		actual := IsStringLength(test.value, test.min, test.max)
+		if actual != test.expected {
+			t.Errorf("Expected IsStringLength(%s, %s, %s) to be %v, got %v", test.value, test.min, test.max, test.expected, actual)
+		}
+	}
+}

@@ -7,19 +7,11 @@ import (
 	"path"
 	"regexp"
 	"strings"
-	"unicode/utf8"
 )
 
 // Contains check if the string contains the substring.
 func Contains(str, substring string) bool {
 	return strings.Contains(str, substring)
-}
-
-// Matches check if string matches the pattern (pattern is regular expression)
-// In case of error return false
-func Matches(str, pattern string) bool {
-	match, _ := regexp.MatchString(pattern, str)
-	return match
 }
 
 // LeftTrim trim characters from the left-side of the input.
@@ -115,28 +107,6 @@ func GetLine(s string, index int) (string, error) {
 // RemoveTags remove all tags from HTML string
 func RemoveTags(s string) string {
 	return ReplacePattern(s, "<[^>]*>", "")
-}
-
-// StringMatches checks if a string matches a given pattern.
-func StringMatches(s string, params ...string) bool {
-	if len(params) == 1 {
-		pattern := params[0]
-		return Matches(s, pattern)
-	}
-	return false
-}
-
-// StringLength check string's length (including multi byte strings)
-func StringLength(str string, params ...string) bool {
-
-	if len(params) == 2 {
-		strLength := utf8.RuneCountInString(str)
-		min, _ := ToInt(params[0])
-		max, _ := ToInt(params[1])
-		return strLength >= int(min) && strLength <= int(max)
-	}
-
-	return false
 }
 
 // Will truncate a string closest length without breaking words.
