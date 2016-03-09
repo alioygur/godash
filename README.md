@@ -1,4 +1,10 @@
 # godash
+
+[![Build Status](https://travis-ci.org/alioygur/godash.svg?branch=master)](https://travis-ci.org/alioygur/godash) 
+[![GoDoc](https://godoc.org/github.com/alioygur/godash?status.svg)](https://godoc.org/github.com/alioygur/godash)
+[![Go Report Card](https://goreportcard.com/badge/github.com/alioygur/godash)](https://goreportcard.com/report/github.com/alioygur/godash)
+
+
 A utility library in Golang inspired by lodash
 
 ## installation
