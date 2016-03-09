@@ -1,13 +1,5 @@
 package godash
 
-// InRange returns true if value lies between left and right border
-func InRange(value, left, right float64) bool {
-	if left > right {
-		left, right = right, left
-	}
-	return value >= left && value <= right
-}
-
 // Abs returns absolute value of number
 func Abs(value float64) float64 {
 	return value * Sign(value)

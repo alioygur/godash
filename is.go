@@ -11,6 +11,14 @@ import (
 	"unicode"
 )
 
+// IsInRange returns true if value lies between left and right border
+func IsInRange(value, left, right float64) bool {
+	if left > right {
+		left, right = right, left
+	}
+	return value >= left && value <= right
+}
+
 // IsEmail check if the string is an email.
 func IsEmail(str string) bool {
 	// TODO uppercase letters are not supported

@@ -18,9 +18,22 @@ A utility library in Golang inspired by lodash
 Many thanks to our contributors: [contributors](https://github.com/alioygur/godash/graphs/contributors)
 
 
-## Simple usage
+## Is* (collection of checking)
+
+**Example**
 
 ```go
+var validEmail = "jhon@example.com"
+var invalidEmail = "blabla"
+
+godash.IsEmail(validEmail) // result: true
+godash.IsEmail(invalidEmail) // result: false
+```
+
+Full list of Is* functions;
+
+```go
+
 ```
 
 ## Thanks & Authors
