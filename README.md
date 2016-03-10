@@ -130,6 +130,39 @@ func ExampleToBoolean() {
 
 Full list of To* functions;
 
+Examples;
+
+```go
+func ExampleEach() {
+	data := []interface{}{1, 2, 3, 4, 5}
+	var fn Iterator = func(value interface{}, index int) {
+		println(value.(int))
+	}
+	Each(data, fn)
+}
+
+func ExampleMap() {
+	data := []interface{}{1, 2, 3, 4, 5}
+	var fn ResultIterator = func(value interface{}, index int) interface{} {
+		return value.(int) * 3
+	}
+
+	fmt.Printf("%v", Map(data, fn))
+	// Output: [3 6 9 12 15]
+}
+
+func ExampleFilter() {
+	data := []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+	var fn ConditionIterator = func(value interface{}, index int) bool {
+		return value.(int)%2 == 0
+	}
+
+	fmt.Printf("%v", Filter(data, fn))
+	// Output: [2 4 6 8 10]
+}
+```
+
 ```go
 func ToBoolean(str string) (bool, error)
 func ToCamelCase(s string) string

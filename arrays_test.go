@@ -1,6 +1,9 @@
 package godash
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestEach(t *testing.T) {
 	// TODO Maybe refactor?
@@ -44,7 +47,9 @@ func ExampleMap() {
 	var fn ResultIterator = func(value interface{}, index int) interface{} {
 		return value.(int) * 3
 	}
-	_ = Map(data, fn) // result = []interface{}{1, 6, 9, 12, 15}
+
+	fmt.Printf("%v", Map(data, fn))
+	// Output: [3 6 9 12 15]
 }
 
 func TestFind(t *testing.T) {
@@ -87,10 +92,13 @@ func TestFilter(t *testing.T) {
 
 func ExampleFilter() {
 	data := []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
 	var fn ConditionIterator = func(value interface{}, index int) bool {
 		return value.(int)%2 == 0
 	}
-	_ = Filter(data, fn) // result = []interface{}{2, 4, 6, 8, 10}
+
+	fmt.Printf("%v", Filter(data, fn))
+	// Output: [2 4 6 8 10]
 }
 
 func TestCount(t *testing.T) {
