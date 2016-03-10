@@ -130,6 +130,18 @@ func ExampleToBoolean() {
 
 Full list of To* functions;
 
+```go
+func ToBoolean(str string) (bool, error)
+func ToCamelCase(s string) string
+func ToFloat(str string) (float64, error)
+func ToInt(str string) (int64, error)
+func ToJSON(obj interface{}) (string, error)
+func ToSnakeCase(str string) string
+func ToString(obj interface{}) string
+```
+
+## Utils (collection of utilities)
+
 Examples;
 
 ```go
@@ -164,18 +176,6 @@ func ExampleFilter() {
 ```
 
 ```go
-func ToBoolean(str string) (bool, error)
-func ToCamelCase(s string) string
-func ToFloat(str string) (float64, error)
-func ToInt(str string) (int64, error)
-func ToJSON(obj interface{}) (string, error)
-func ToSnakeCase(str string) string
-func ToString(obj interface{}) string
-```
-
-## Utils (collection of utilities)
-
-```go
 func Abs(value float64) float64
 func BlackList(str, chars string) string
 func ByteLength(str string, params ...string) bool
@@ -201,7 +201,7 @@ func Truncate(str string, length int, ending string) string
 func WhiteList(str, chars string) string
 ```
 
-for more documentation [godoc](https://godoc.org/github.com/alioygur/gores)
+for more documentation [godoc](https://godoc.org/github.com/alioygur/godash)
 
 ## Thanks & Authors
 
