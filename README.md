@@ -4,7 +4,6 @@
 [![GoDoc](https://godoc.org/github.com/alioygur/godash?status.svg)](https://godoc.org/github.com/alioygur/godash)
 [![Go Report Card](https://goreportcard.com/badge/github.com/alioygur/godash)](https://goreportcard.com/report/github.com/alioygur/godash)
 
-
 A utility library in Golang inspired by lodash
 
 ## installation
@@ -138,67 +137,6 @@ func ToInt(str string) (int64, error)
 func ToJSON(obj interface{}) (string, error)
 func ToSnakeCase(str string) string
 func ToString(obj interface{}) string
-```
-
-## Utils (collection of utilities)
-
-Examples;
-
-```go
-func ExampleEach() {
-	data := []interface{}{1, 2, 3, 4, 5}
-	var fn Iterator = func(value interface{}, index int) {
-		println(value.(int))
-	}
-	Each(data, fn)
-}
-
-func ExampleMap() {
-	data := []interface{}{1, 2, 3, 4, 5}
-	var fn ResultIterator = func(value interface{}, index int) interface{} {
-		return value.(int) * 3
-	}
-
-	fmt.Printf("%v", Map(data, fn))
-	// Output: [3 6 9 12 15]
-}
-
-func ExampleFilter() {
-	data := []interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-
-	var fn ConditionIterator = func(value interface{}, index int) bool {
-		return value.(int)%2 == 0
-	}
-
-	fmt.Printf("%v", Filter(data, fn))
-	// Output: [2 4 6 8 10]
-}
-```
-
-```go
-func Abs(value float64) float64
-func BlackList(str, chars string) string
-func ByteLength(str string, params ...string) bool
-func Contains(str, substring string) bool
-func Count(array []interface{}, iterator ConditionIterator) int
-func Each(array []interface{}, iterator Iterator)
-func Filter(array []interface{}, iterator ConditionIterator) []interface{}
-func Find(array []interface{}, iterator ConditionIterator) interface{}
-func GetLine(s string, index int) (string, error)
-func GetLines(s string) []string
-func LeftTrim(str, chars string) string
-func Map(array []interface{}, iterator ResultIterator) []interface{}
-func NormalizeEmail(str string) (string, error)
-func RemoveTags(s string) string
-func ReplacePattern(str, pattern, replace string) string
-func Reverse(s string) string
-func RightTrim(str, chars string) string
-func SafeFileName(str string) string
-func Sign(value float64) float64
-func StripLow(str string, keepNewLines bool) string
-func Trim(str, chars string) string
-func Truncate(str string, length int, ending string) string
-func WhiteList(str, chars string) string
 ```
 
 for more documentation [godoc](https://godoc.org/github.com/alioygur/godash)
