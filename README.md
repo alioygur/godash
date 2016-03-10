@@ -27,11 +27,15 @@ Many thanks to our contributors: [contributors](https://github.com/alioygur/goda
 An Example;
 
 ```go
-var validEmail = "jhon@example.com"
-var invalidEmail = "blabla"
-
-godash.IsEmail(validEmail) // result: true
-godash.IsEmail(invalidEmail) // result: false
+func ExampleIsEmail() {
+	fmt.Println(IsEmail("jhon@example.com"))
+	fmt.Println(IsEmail("invalid.com"))
+	fmt.Println(IsEmail("jhon doe@mail.com"))
+	// Output:
+	// true
+	// false
+	// false
+}
 ```
 
 Full list of Is* functions;
@@ -107,12 +111,21 @@ func IsWhole(value float64) bool
 An Example;
 
 ```go
-godash.ToBoolean("True") // result: true
-godash.ToBoolean("true") // result: true
-godash.ToBoolean("1") // result: true
-godash.ToBoolean("false") // result: false
-godash.ToBoolean("0") // result: false
-godash.ToBoolean("blabla") // result: false
+func ExampleToBoolean() {
+	fmt.Println(ToBoolean("True"))
+	fmt.Println(ToBoolean("true"))
+	fmt.Println(ToBoolean("1"))
+	fmt.Println(ToBoolean("False"))
+	fmt.Println(ToBoolean("false"))
+	fmt.Println(ToBoolean("0"))
+	// Output:
+	// true <nil>
+	// true <nil>
+	// true <nil>
+	// false <nil>
+	// false <nil>
+	// false <nil>
+}
 ```
 
 Full list of To* functions;

@@ -22,7 +22,7 @@ func IsInRange(value, left, right float64) bool {
 
 // IsEmail check if the string is an email.
 func IsEmail(str string) bool {
-	// TODO uppercase letters are not supported
+	// TODO: uppercase letters are not supported
 	return rxEmail.MatchString(str)
 }
 

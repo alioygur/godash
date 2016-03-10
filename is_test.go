@@ -1,6 +1,7 @@
 package godash
 
 import (
+	"fmt"
 	"strings"
 	"testing"
 )
@@ -554,6 +555,16 @@ func TestIsEmail(t *testing.T) {
 			t.Errorf("Expected IsEmail(%q) to be %v, got %v", test.param, test.expected, actual)
 		}
 	}
+}
+
+func ExampleIsEmail() {
+	fmt.Println(IsEmail("jhon@example.com"))
+	fmt.Println(IsEmail("invalid.com"))
+	fmt.Println(IsEmail("jhon doe@mail.com"))
+	// Output:
+	// true
+	// false
+	// false
 }
 
 func TestIsURL(t *testing.T) {

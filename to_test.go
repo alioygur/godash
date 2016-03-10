@@ -1,6 +1,9 @@
 package godash
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestToInt(t *testing.T) {
 	tests := []string{"1000", "-123", "abcdef", "100000000000000000000000000000000000000000000"}
@@ -24,6 +27,22 @@ func TestToBoolean(t *testing.T) {
 			t.FailNow()
 		}
 	}
+}
+
+func ExampleToBoolean() {
+	fmt.Println(ToBoolean("True"))
+	fmt.Println(ToBoolean("true"))
+	fmt.Println(ToBoolean("1"))
+	fmt.Println(ToBoolean("False"))
+	fmt.Println(ToBoolean("false"))
+	fmt.Println(ToBoolean("0"))
+	// Output:
+	// true <nil>
+	// true <nil>
+	// true <nil>
+	// false <nil>
+	// false <nil>
+	// false <nil>
 }
 
 func toString(t *testing.T, test interface{}, expected string) {
