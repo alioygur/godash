@@ -4,6 +4,8 @@
 [![GoDoc](https://godoc.org/github.com/alioygur/godash?status.svg)](https://godoc.org/github.com/alioygur/godash)
 [![Go Report Card](https://goreportcard.com/badge/github.com/alioygur/godash)](https://goreportcard.com/report/github.com/alioygur/godash)
 
+**Attention: this package is under development**
+
 A utility library in Golang inspired by lodash
 
 ## installation
