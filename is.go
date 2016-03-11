@@ -20,10 +20,14 @@ func IsInRange(value, left, right float64) bool {
 	return value >= left && value <= right
 }
 
-// IsEmail check if the string is an email.
-func IsEmail(str string) bool {
-	// TODO: uppercase letters are not supported
-	return rxEmail.MatchString(str)
+// IsEmail is a constraint to do a simple validation for email addresses, it only check if the string contains "@"
+// and that it is not in the first or last character of the string
+// https://en.wikipedia.org/wiki/Email_address#Valid_email_addresses
+func IsEmail(s string) bool {
+	if !strings.Contains(s, "@") || string(s[0]) == "@" || string(s[len(s)-1]) == "@" {
+		return false
+	}
+	return true
 }
 
 // IsURL check if the string is an URL.

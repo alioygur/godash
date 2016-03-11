@@ -533,21 +533,22 @@ func TestIsEmail(t *testing.T) {
 		param    string
 		expected bool
 	}{
-		{"", false},
-		{"foo@bar.com", true},
-		{"x@x.x", true},
-		{"foo@bar.com.au", true},
-		{"foo+bar@bar.com", true},
-		{"foo@bar.coffee", true},
-		{"foo@bar.中文网", true},
-		{"invalidemail@", false},
-		{"invalid.com", false},
-		{"@invalid.com", false},
-		{"test|123@m端ller.com", true},
-		{"hans@m端ller.com", true},
-		{"hans.m端ller@test.com", true},
-		{"NathAn.daVIeS@DomaIn.cOM", true},
-		{"NATHAN.DAVIES@DOMAIN.CO.UK", true},
+		{``, false},
+		{`foo@bar.com`, true},
+		{`x@x.x`, true},
+		{`foo@bar.com.au`, true},
+		{`foo+bar@bar.com`, true},
+		{`foo@bar.coffee`, true},
+		{`foo@bar.中文网`, true},
+		{`invalidemail@`, false},
+		{`invalid.com`, false},
+		{`@invalid.com`, false},
+		{`test|123@m端ller.com`, true},
+		{`hans@m端ller.com`, true},
+		{`hans.m端ller@test.com`, true},
+		{`NathAn.daVIeS@DomaIn.cOM`, true},
+		{`NATHAN.DAVIES@DOMAIN.CO.UK`, true},
+		{`very.(),:;<>[]".VERY."very@\ "very".unusual@strange.example.com`, true},
 	}
 	for _, test := range tests {
 		actual := IsEmail(test.param)
@@ -560,11 +561,11 @@ func TestIsEmail(t *testing.T) {
 func ExampleIsEmail() {
 	fmt.Println(IsEmail("jhon@example.com"))
 	fmt.Println(IsEmail("invalid.com"))
-	fmt.Println(IsEmail("jhon doe@mail.com"))
+	fmt.Println(IsEmail(`very.(),:;<>[]".VERY."very@\ "very".unusual@strange.example.com`))
 	// Output:
 	// true
 	// false
-	// false
+	// true
 }
 
 func TestIsURL(t *testing.T) {
