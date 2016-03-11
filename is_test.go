@@ -274,10 +274,10 @@ func TestIsNumeric(t *testing.T) {
 		{"\u0030", true},  //UTF-8(ASCII): 0
 		{"123", true},
 		{"0123", true},
-		{"-00123", true},
-		{"+00123", true},
+		{"-00123", false},
+		{"+00123", false},
 		{"0", true},
-		{"-0", true},
+		{"-0", false},
 		{"123.123", false},
 		{" ", false},
 		{".", false},
@@ -296,7 +296,7 @@ func TestIsNumeric(t *testing.T) {
 		{"1+1", false},
 		{"+", false},
 		{"++", false},
-		{"+1", true},
+		{"+1", false},
 	}
 	for _, test := range tests {
 		actual := IsNumeric(test.param)
@@ -335,16 +335,16 @@ func TestIsUTFNumeric(t *testing.T) {
 		{"\u0030", true},  //UTF-8(ASCII): 0
 		{"123", true},
 		{"0123", true},
-		{"-00123", true},
+		{"-00123", false},
 		{"0", true},
-		{"-0", true},
+		{"-0", false},
 		{"--0", false},
 		{"-0-", false},
 		{"123.123", false},
 		{" ", false},
 		{".", false},
 		{"12𐅪3", true},
-		{"-1¾", true},
+		{"-1¾", false},
 		{"1¾", true},
 		{"〥〩", true},
 		{"모자", false},
@@ -354,7 +354,7 @@ func TestIsUTFNumeric(t *testing.T) {
 		{"1+1", false},
 		{"+", false},
 		{"++", false},
-		{"+1", true},
+		{"+1", false},
 	}
 	for _, test := range tests {
 		actual := IsUTFNumeric(test.param)
@@ -371,7 +371,6 @@ func TestIsUTFDigit(t *testing.T) {
 		param    string
 		expected bool
 	}{
-
 		{"\n", false},
 		{"\r", false},
 		{"Ⅸ", false},
@@ -394,9 +393,9 @@ func TestIsUTFDigit(t *testing.T) {
 		{"\u0030", true},  //UTF-8(ASCII): 0
 		{"123", true},
 		{"0123", true},
-		{"-00123", true},
+		{"-00123", false},
 		{"0", true},
-		{"-0", true},
+		{"-0", false},
 		{"--0", false},
 		{"-0-", false},
 		{"123.123", false},
@@ -406,7 +405,7 @@ func TestIsUTFDigit(t *testing.T) {
 		{"1483920", true},
 		{"", true},
 		{"۳۵۶۰", true},
-		{"-29", true},
+		{"-29", false},
 		{"-1¾", false},
 		{"1¾", false},
 		{"〥〩", false},
@@ -417,7 +416,7 @@ func TestIsUTFDigit(t *testing.T) {
 		{"1+1", false},
 		{"+", false},
 		{"++", false},
-		{"+1", true},
+		{"+1", false},
 	}
 	for _, test := range tests {
 		actual := IsUTFDigit(test.param)

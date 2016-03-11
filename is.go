@@ -72,22 +72,20 @@ func IsRequestURI(rawurl string) bool {
 }
 
 // IsAlpha check if the string contains only letters (a-zA-Z). Empty string is valid.
-func IsAlpha(str string) bool {
-	if IsNull(str) {
-		return true
+func IsAlpha(s string) bool {
+	for _, v := range s {
+		if ('Z' < v || v < 'A') && ('z' < v || v < 'a') {
+			return false
+		}
 	}
-	return rxAlpha.MatchString(str)
+	return true
 }
 
 //IsUTFLetter check if the string contains only unicode letter characters.
 //Similar to IsAlpha but for all languages. Empty string is valid.
 func IsUTFLetter(str string) bool {
-	if IsNull(str) {
-		return true
-	}
-
-	for _, c := range str {
-		if !unicode.IsLetter(c) {
+	for _, v := range str {
+		if !unicode.IsLetter(v) {
 			return false
 		}
 	}
@@ -96,55 +94,44 @@ func IsUTFLetter(str string) bool {
 }
 
 // IsAlphanumeric check if the string contains only letters and numbers. Empty string is valid.
-func IsAlphanumeric(str string) bool {
-	if IsNull(str) {
-		return true
-	}
-	return rxAlphanumeric.MatchString(str)
-}
-
-// IsUTFLetterNumeric check if the string contains only unicode letters and numbers. Empty string is valid.
-func IsUTFLetterNumeric(str string) bool {
-	if IsNull(str) {
-		return true
-	}
-	for _, c := range str {
-		if !unicode.IsLetter(c) && !unicode.IsNumber(c) { //letters && numbers are ok
+func IsAlphanumeric(s string) bool {
+	for _, v := range s {
+		if ('Z' < v || v < 'A') && ('z' < v || v < 'a') && ('9' < v || v < '0') {
 			return false
 		}
 	}
 	return true
+}
 
+// IsUTFLetterNumeric check if the string contains only unicode letters and numbers. Empty string is valid.
+func IsUTFLetterNumeric(s string) bool {
+	for _, v := range s {
+		if !unicode.IsLetter(v) && !unicode.IsNumber(v) { //letters && numbers are ok
+			return false
+		}
+	}
+	return true
 }
 
 // IsNumeric check if the string contains only numbers. Empty string is valid.
-func IsNumeric(str string) bool {
-	if IsNull(str) {
-		return true
+func IsNumeric(s string) bool {
+	for _, v := range s {
+		if '9' < v || v < '0' {
+			return false
+		}
 	}
-	return rxNumeric.MatchString(str)
+	return true
 }
 
 // IsUTFNumeric check if the string contains only unicode numbers of any kind.
 // Numbers can be 0-9 but also Fractions ¾,Roman Ⅸ and Hangzhou 〩. Empty string is valid.
-func IsUTFNumeric(str string) bool {
-	if IsNull(str) {
-		return true
-	}
-	if strings.IndexAny(str, "+-") > 0 {
-		return false
-	}
-	if len(str) > 1 {
-		str = strings.TrimPrefix(str, "-")
-		str = strings.TrimPrefix(str, "+")
-	}
-	for _, c := range str {
-		if unicode.IsNumber(c) == false { //numbers && minus sign are ok
+func IsUTFNumeric(s string) bool {
+	for _, v := range s {
+		if unicode.IsNumber(v) == false {
 			return false
 		}
 	}
 	return true
-
 }
 
 // IsNegative returns true if value < 0
@@ -178,24 +165,13 @@ func IsNatural(value float64) bool {
 }
 
 // IsUTFDigit check if the string contains only unicode radix-10 decimal digits. Empty string is valid.
-func IsUTFDigit(str string) bool {
-	if IsNull(str) {
-		return true
-	}
-	if strings.IndexAny(str, "+-") > 0 {
-		return false
-	}
-	if len(str) > 1 {
-		str = strings.TrimPrefix(str, "-")
-		str = strings.TrimPrefix(str, "+")
-	}
-	for _, c := range str {
-		if !unicode.IsDigit(c) { //digits && minus sign are ok
+func IsUTFDigit(s string) bool {
+	for _, v := range s {
+		if !unicode.IsDigit(v) {
 			return false
 		}
 	}
 	return true
-
 }
 
 // IsHexadecimal check if the string is a hexadecimal number.
