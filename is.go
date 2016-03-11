@@ -382,11 +382,17 @@ func IsMultibyte(str string) bool {
 }
 
 // IsASCII check if the string contains ASCII chars only. Empty string is valid.
-func IsASCII(str string) bool {
-	if IsNull(str) {
+func IsASCII(s string) bool {
+	if IsNull(s) {
 		return true
 	}
-	return rxASCII.MatchString(str)
+
+	for i := 0; i < len(s); i++ {
+		if s[i] >= utf8.RuneSelf {
+			return false
+		}
+	}
+	return true
 }
 
 // IsPrintableASCII check if the string contains printable ASCII chars only. Empty string is valid.

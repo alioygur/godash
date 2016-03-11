@@ -31,11 +31,11 @@ An Example;
 func ExampleIsEmail() {
 	fmt.Println(IsEmail("jhon@example.com"))
 	fmt.Println(IsEmail("invalid.com"))
-	fmt.Println(IsEmail("jhon doe@mail.com"))
+	fmt.Println(IsEmail(`very.(),:;<>[]".VERY."very@\ "very".unusual@strange.example.com`))
 	// Output:
 	// true
 	// false
-	// false
+	// true
 }
 ```
 
