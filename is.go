@@ -1,6 +1,7 @@
 package godash
 
 import (
+	"encoding/base64"
 	"encoding/json"
 	"math"
 	"net"
@@ -350,6 +351,7 @@ func IsJSON(str string) bool {
 }
 
 // IsMultibyte check if the string contains one or more multibyte chars. Empty string is valid.
+// todo: refactor
 func IsMultibyte(str string) bool {
 	if IsNull(str) {
 		return true
@@ -359,12 +361,8 @@ func IsMultibyte(str string) bool {
 
 // IsASCII check if the string contains ASCII chars only. Empty string is valid.
 func IsASCII(s string) bool {
-	if IsNull(s) {
-		return true
-	}
-
-	for i := 0; i < len(s); i++ {
-		if s[i] >= utf8.RuneSelf {
+	for _, v := range s {
+		if v >= utf8.RuneSelf {
 			return false
 		}
 	}
@@ -372,11 +370,13 @@ func IsASCII(s string) bool {
 }
 
 // IsPrintableASCII check if the string contains printable ASCII chars only. Empty string is valid.
-func IsPrintableASCII(str string) bool {
-	if IsNull(str) {
-		return true
+func IsPrintableASCII(s string) bool {
+	for _, v := range s {
+		if v < ' ' || v > '~' {
+			return false
+		}
 	}
-	return rxPrintableASCII.MatchString(str)
+	return true
 }
 
 // IsFullWidth check if the string contains any full-width chars. Empty string is valid.
@@ -404,8 +404,13 @@ func IsVariableWidth(str string) bool {
 }
 
 // IsBase64 check if a string is base64 encoded.
-func IsBase64(str string) bool {
-	return rxBase64.MatchString(str)
+func IsBase64(s string) bool {
+	if IsNull(s) {
+		return false
+	}
+	_, err := base64.StdEncoding.DecodeString(s)
+
+	return err == nil
 }
 
 // IsFilePath check is a string is Win or Unix file path and returns it's type.
