@@ -955,6 +955,7 @@ func TestIsMultibyte(t *testing.T) {
 		{"test＠example.com", true},
 		{"1234abcDEｘｙｚ", true},
 		{"ｶﾀｶﾅ", true},
+		{"~", false},
 	}
 	for _, test := range tests {
 		actual := IsMultibyte(test.param)

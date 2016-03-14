@@ -351,12 +351,14 @@ func IsJSON(str string) bool {
 }
 
 // IsMultibyte check if the string contains one or more multibyte chars. Empty string is valid.
-// todo: refactor
-func IsMultibyte(str string) bool {
-	if IsNull(str) {
-		return true
+func IsMultibyte(s string) bool {
+	for _, v := range s {
+		if v >= utf8.RuneSelf {
+			return true
+		}
 	}
-	return rxMultibyte.MatchString(str)
+
+	return IsNull(s)
 }
 
 // IsASCII check if the string contains ASCII chars only. Empty string is valid.
