@@ -28,6 +28,10 @@ Many thanks to our contributors: [contributors](https://github.com/alioygur/goda
 An Example;
 
 ```go
+func IsEmail(str string) bool
+```
+
+```go
 func ExampleIsEmail() {
 	fmt.Println(IsEmail("jhon@example.com"))
 	fmt.Println(IsEmail("invalid.com"))
