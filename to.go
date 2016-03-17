@@ -1,6 +1,7 @@
 package godash
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
 	"strconv"
@@ -55,6 +56,16 @@ func ToBoolean(str string) (bool, error) {
 // todo: improve
 func ToCamelCase(s string) string {
 	return strings.Replace(strings.Title(strings.Replace(strings.ToLower(s), "_", " ", -1)), " ", "", -1)
+}
+
+// ToUTFCamelCase converts from non letter separated to camel case form.
+func ToUTFCamelCase(s string) string {
+	byteSrc := []byte(s)
+	chunks := rxUTFCameling.FindAll(byteSrc, -1)
+	for idx, val := range chunks {
+		chunks[idx] = bytes.Title(val)
+	}
+	return string(bytes.Join(chunks, nil))
 }
 
 // ToSnakeCase converts from camel case form to underscore separated form.

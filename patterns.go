@@ -35,7 +35,7 @@ const (
 	WinPath   string = `^[a-zA-Z]:\\(?:[^\\/:*?"<>|\r\n]+\\)*[^\\/:*?"<>|\r\n]*$`
 	UnixPath  string = `^((?:\/[a-zA-Z0-9\.\:]+(?:_[a-zA-Z0-9\:\.]+)*(?:\-[\:a-zA-Z0-9\.]+)*)+\/?)$`
 	Semver    string = "^v?(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)(-(0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*)(\\.(0|[1-9]\\d*|\\d*[a-zA-Z-][0-9a-zA-Z-]*))*)?(\\+[0-9a-zA-Z-]+(\\.[0-9a-zA-Z-]+)*)?$"
-	tagName   string = "valid"
+	UTFCameling  string = `[\p{L}\p{N}]+`
 )
 
 // Used by IsFilePath func
@@ -48,6 +48,7 @@ const (
 	Unix
 )
 
+// Regular expressions patterns
 var (
 	// rxEmail          = regexp.MustCompile(Email)
 	rxCreditCard = regexp.MustCompile(CreditCard)
@@ -80,4 +81,5 @@ var (
 	rxWinPath   = regexp.MustCompile(WinPath)
 	rxUnixPath  = regexp.MustCompile(UnixPath)
 	rxSemver    = regexp.MustCompile(Semver)
+	rxUTFCameling  = regexp.MustCompile(UTFCameling)
 )
