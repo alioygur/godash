@@ -44,17 +44,17 @@ func ExampleIsEmail() {
 Full list of Is* functions;
 
 ```go
-func IsASCII(str string) bool
-func IsAlpha(str string) bool
-func IsAlphanumeric(str string) bool
-func IsBase64(str string) bool
+func IsASCII(s string) bool
+func IsAlpha(s string) bool
+func IsAlphanumeric(s string) bool
+func IsBase64(s string) bool
 func IsByteLength(str string, min, max int) bool
 func IsCreditCard(str string) bool
 func IsDNSName(str string) bool
 func IsDataURI(str string) bool
 func IsDialString(str string) bool
 func IsDivisibleBy(str, num string) bool
-func IsEmail(str string) bool
+func IsEmail(s string) bool
 func IsFilePath(str string) (bool, int)
 func IsFloat(str string) bool
 func IsFullWidth(str string) bool
@@ -78,16 +78,16 @@ func IsLowerCase(str string) bool
 func IsMAC(str string) bool
 func IsMatches(str, pattern string) bool
 func IsMongoID(str string) bool
-func IsMultibyte(str string) bool
+func IsMultibyte(s string) bool
 func IsNatural(value float64) bool
 func IsNegative(value float64) bool
 func IsNonNegative(value float64) bool
 func IsNonPositive(value float64) bool
 func IsNull(str string) bool
-func IsNumeric(str string) bool
+func IsNumeric(s string) bool
 func IsPort(str string) bool
 func IsPositive(value float64) bool
-func IsPrintableASCII(str string) bool
+func IsPrintableASCII(s string) bool
 func IsRGBcolor(str string) bool
 func IsRequestURI(rawurl string) bool
 func IsRequestURL(rawurl string) bool
@@ -96,10 +96,10 @@ func IsSemver(str string) bool
 func IsStringLength(str string, params ...string) bool
 func IsStringMatches(s string, params ...string) bool
 func IsURL(str string) bool
-func IsUTFDigit(str string) bool
+func IsUTFDigit(s string) bool
 func IsUTFLetter(str string) bool
-func IsUTFLetterNumeric(str string) bool
-func IsUTFNumeric(str string) bool
+func IsUTFLetterNumeric(s string) bool
+func IsUTFNumeric(s string) bool
 func IsUUID(str string) bool
 func IsUUIDv3(str string) bool
 func IsUUIDv4(str string) bool
@@ -107,6 +107,14 @@ func IsUUIDv5(str string) bool
 func IsUpperCase(str string) bool
 func IsVariableWidth(str string) bool
 func IsWhole(value float64) bool
+func ToBoolean(str string) (bool, error)
+func ToCamelCase(s string) string
+func ToFloat(str string) (float64, error)
+func ToInt(str string) (int64, error)
+func ToJSON(obj interface{}) (string, error)
+func ToSnakeCase(str string) string
+func ToString(obj interface{}) string
+func ToUTFCamelCase(s string) string
 ```
 
 ## To* (collection of converting)
