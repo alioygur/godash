@@ -141,7 +141,6 @@ func ToInt(str string) (int64, error)
 func ToJSON(obj interface{}) (string, error)
 func ToSnakeCase(str string) string
 func ToString(obj interface{}) string
-func ToUTFCamelCase(s string) string
 ```
 
 for more documentation [godoc](https://godoc.org/github.com/alioygur/godash)

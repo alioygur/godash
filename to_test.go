@@ -85,33 +85,12 @@ func TestToCamelCase(t *testing.T) {
 		{"a_b_c", "ABC"},
 		{"my_func", "MyFunc"},
 		{"1ab_cd", "1abCd"},
+		{"!!! fıstıkçı şahap !", "FıstıkçıŞahap"},
 	}
 	for _, test := range tests {
 		actual := ToCamelCase(test.param)
 		if actual != test.expected {
 			t.Errorf("Expected ToCamelCase(%q) to be %v, got %v", test.param, test.expected, actual)
-		}
-	}
-}
-
-// todo: add utf tests
-func TestToUTFCamelCase(t *testing.T) {
-	t.Parallel()
-
-	var tests = []struct {
-		param    string
-		expected string
-	}{
-		{"a_b_c", "ABC"},
-		{"my_func", "MyFunc"},
-		{"1ab_cd", "1abCd"},
-		{"camel case", "CamelCase"},
-		{"   camel     Case !!!", "CamelCase"},
-	}
-	for _, test := range tests {
-		actual := ToUTFCamelCase(test.param)
-		if actual != test.expected {
-			t.Errorf("Expected ToUTFCamelCase(%q) to be %v, got %v", test.param, test.expected, actual)
 		}
 	}
 }

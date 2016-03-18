@@ -5,7 +5,6 @@ import (
 	"encoding/json"
 	"fmt"
 	"strconv"
-	"strings"
 	"unicode"
 )
 
@@ -52,16 +51,9 @@ func ToBoolean(str string) (bool, error) {
 }
 
 // ToCamelCase converts from underscore separated form to camel case form.
-// Ex.: my_func => MyFunc
-// todo: improve
 func ToCamelCase(s string) string {
-	return strings.Replace(strings.Title(strings.Replace(strings.ToLower(s), "_", " ", -1)), " ", "", -1)
-}
-
-// ToUTFCamelCase converts from non letter separated to camel case form.
-func ToUTFCamelCase(s string) string {
 	byteSrc := []byte(s)
-	chunks := rxUTFCameling.FindAll(byteSrc, -1)
+	chunks := rxCameling.FindAll(byteSrc, -1)
 	for idx, val := range chunks {
 		chunks[idx] = bytes.Title(val)
 	}
