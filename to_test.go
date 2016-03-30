@@ -85,7 +85,12 @@ func TestToCamelCase(t *testing.T) {
 		{"a_b_c", "ABC"},
 		{"my_func", "MyFunc"},
 		{"1ab_cd", "1abCd"},
-		{"!!! fıstıkçı şahap !", "FıstıkçıŞahap"},
+		{"toUTFCamelCase", "ToUTFCamelCase"},
+		{"camel case", "CamelCase"},
+		{"  camel case  ", "CamelCase"},
+		{"!!!camel case====", "CamelCase"},
+		{"camel-case", "CamelCase"},
+		{"camel_case", "CamelCase"},
 	}
 	for _, test := range tests {
 		actual := ToCamelCase(test.param)
@@ -95,6 +100,20 @@ func TestToCamelCase(t *testing.T) {
 	}
 }
 
+func ExampleToCamelCase() {
+	fmt.Println(ToCamelCase("camel case"))
+	fmt.Println(ToCamelCase("  camel case  "))
+	fmt.Println(ToCamelCase("!!!camel case===="))
+	fmt.Println(ToCamelCase("camel-case"))
+	fmt.Println(ToCamelCase("camel_case"))
+	// Output:
+	// CamelCase
+	// CamelCase
+	// CamelCase
+	// CamelCase
+	// CamelCase
+}
+
 func TestToSnakeCase(t *testing.T) {
 	t.Parallel()
 
@@ -102,9 +121,21 @@ func TestToSnakeCase(t *testing.T) {
 		param    string
 		expected string
 	}{
-		{"MyFunc", "my_func"},
-		{"ABC", "a_b_c"},
-		{"1B", "1_b"},
+		{"a", "a"},
+		{"snake", "snake"},
+		{"A", "a"},
+		{"ID", "id"},
+		{"MOTD", "motd"},
+		{"Snake", "snake"},
+		{"SnakeTest", "snake_test"},
+		{"SnakeID", "snake_id"},
+		{"LinuxMOTD", "linux_motd"},
+		{"snake case", "snake_case"},
+		{"   ! snake----- [ case", "snake_case"},
+		{"publicF", "public_f"},
+		{"RESTful", "restful"},
+		{"APIResponse", "apiresponse"},
+		{"simpleXML", "simple_xml"},
 	}
 	for _, test := range tests {
 		actual := ToSnakeCase(test.param)
@@ -112,4 +143,20 @@ func TestToSnakeCase(t *testing.T) {
 			t.Errorf("Expected ToSnakeCase(%q) to be %v, got %v", test.param, test.expected, actual)
 		}
 	}
+}
+
+func ExampleToSnakeCase() {
+	fmt.Println(ToSnakeCase("SnakeCase"))
+	fmt.Println(ToSnakeCase("snake case"))
+	fmt.Println(ToSnakeCase("  snake case  "))
+	fmt.Println(ToSnakeCase("!!!snake case===="))
+	fmt.Println(ToSnakeCase("snake-case"))
+	fmt.Println(ToSnakeCase("snake_case"))
+	// Output:
+	// snake_case
+	// snake_case
+	// snake_case
+	// snake_case
+	// snake_case
+	// snake_case
 }

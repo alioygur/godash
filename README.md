@@ -111,7 +111,7 @@ func IsWhole(value float64) bool
 
 ## To* (collection of converting)
 
-An Example;
+Examples;
 
 ```go
 func ExampleToBoolean() {
@@ -128,6 +128,36 @@ func ExampleToBoolean() {
 	// false <nil>
 	// false <nil>
 	// false <nil>
+}
+
+func ExampleToCamelCase() {
+	fmt.Println(ToCamelCase("camel case"))
+	fmt.Println(ToCamelCase("  camel case  "))
+	fmt.Println(ToCamelCase("!!!camel case===="))
+	fmt.Println(ToCamelCase("camel-case"))
+	fmt.Println(ToCamelCase("camel_case"))
+	// Output:
+	// CamelCase
+	// CamelCase
+	// CamelCase
+	// CamelCase
+	// CamelCase
+}
+
+func ExampleToSnakeCase() {
+	fmt.Println(ToSnakeCase("SnakeCase"))
+	fmt.Println(ToSnakeCase("snake case"))
+	fmt.Println(ToSnakeCase("  snake case  "))
+	fmt.Println(ToSnakeCase("!!!snake case===="))
+	fmt.Println(ToSnakeCase("snake-case"))
+	fmt.Println(ToSnakeCase("snake_case"))
+	// Output:
+	// snake_case
+	// snake_case
+	// snake_case
+	// snake_case
+	// snake_case
+	// snake_case
 }
 ```
 

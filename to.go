@@ -61,18 +61,17 @@ func ToCamelCase(s string) string {
 }
 
 // ToSnakeCase converts from camel case form to underscore separated form.
-// Ex.: MyFunc => my_func
-// todo: improve
-func ToSnakeCase(str string) string {
-	var output []rune
-	var segment []rune
-	for _, r := range str {
-		if !unicode.IsLower(r) {
-			output = addSegment(output, segment)
-			segment = nil
+func ToSnakeCase(s string) string {
+	s = ToCamelCase(s)
+	runes := []rune(s)
+	length := len(runes)
+	var out []rune
+	for i := 0; i < length; i++ {
+		out = append(out, unicode.ToLower(runes[i]))
+		if i+1 < length && (unicode.IsUpper(runes[i+1]) && unicode.IsLower(runes[i])) {
+			out = append(out, '_')
 		}
-		segment = append(segment, unicode.ToLower(r))
 	}
-	output = addSegment(output, segment)
-	return string(output)
+
+	return string(out)
 }
