@@ -1,3 +1,7 @@
+# !!!THIS PROJECT IS NOT MAINTAINED ANYMORE!!!
+
+You can use https://github.com/alioygur/is package instead of this. 
+
 # godash
 
 [![Build Status](https://travis-ci.org/alioygur/godash.svg?branch=master)](https://travis-ci.org/alioygur/godash)
